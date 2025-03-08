@@ -50,9 +50,13 @@ export default function App() {
             <span className="text-fuchsia-600"> Entertainment</span>
           </h1>
         </header>
-        <section className="px-10">
-          <input type="text" />
-          <h2>All Movies</h2>
+        <section className="px-10 w-full">
+          <input
+            type="text"
+            className="border-4 mt-2 block border-pink-500 rounded-full text-white w-1/3 p-3 text-1xl font-semibold text-center cursor-pointer focus:outline-none focus:ring-offset-fuchsia-600 mx-auto"
+            placeholder="Search through millions of movies"
+          />
+          <h2 className="text-pink-500 text-5xl mb-2"> Trending Movies:</h2>
           {error && <p className="text-red-500">{error}</p>}
         </section>
         <section className="flex flex-wrap px-10 gap-6">
